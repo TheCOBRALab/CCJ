@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.1)
 project(CCJ)
 
-set(CMAKE_CXX_FLAGS "-O3 -flto")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -g -O3")
 
 # Set option to build Sparse_CCJ (default ON)
 option(BUILD_SPARSE_CCJ "Build Sparse_CCJ module" ON)
