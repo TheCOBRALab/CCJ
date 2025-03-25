@@ -1,11 +1,9 @@
 package:
   name: ccj
-  version: "1.0.0"
+  version: "1.0.1"
 
 source:
   path: ..
-  # git_url: https://github.com/HosnaJabbari/KnotAli.git
-  # git_rev: (latest tag)
 
 build:
   number: 0
@@ -25,26 +23,26 @@ requirements:
 
 about:
   home: https://github.com/HosnaJabbari/KnotAli
-  summary: "RNA secondary structure prediction with pseudoknots using relaxed Hierarchical Folding."
+  summary: "Prediction of RNA pseudoknotted secondary structures using the CCJ algorithm."
   description: |
-    KnotAli is a computational tool for predicting RNA secondary structures, 
-    including pseudoknotted configurations, using a relaxed Hierarchical Folding 
-    approach. It is designed to analyze RNA alignments in FASTA and CLUSTAL formats 
-    and predict optimal secondary structures using a Minimum Free Energy (MFE) model.
+     CCJ is a computational tool for predicting RNA secondary structures with pseudoknots 
+    based on Minimum Free Energy (MFE) models. It includes three implementations: Original CCJ, 
+    Modified CCJ, and Sparse CCJ. Sparse CCJ, the recommended version, offers memory-efficient 
+    predictions suitable for large RNA sequences.
 
-    The software is implemented in C++ and requires a C++11-compatible compiler, 
-    Pthreads, and CMake (≥3.1) for installation. It is compatible with Linux and macOS, 
-    offering a command-line interface for flexible and efficient RNA structure predictions.
+    CCJ is implemented in C++ and requires a C++11-compatible compiler and CMake (≥3.1) for installation. 
+    The software supports Linux and macOS environments and integrates the SimFold library for energy calculations.
 
-    ### Features:
-    - Predicts RNA secondary structures, including pseudoknots.
-    - Supports multiple sequence alignment input in FASTA and CLUSTAL formats.
-    - Uses an MFE-based algorithm for structure optimization.
-    - Allows user-defined input constraints for improved accuracy.
+    ### Key Features:
+    - Predicts RNA secondary structures, including complex pseudoknots.
+    - Offers three algorithmic variations: Original, Modified (DP09 energy model), and Sparse (optimized memory usage).
+    - Supports single sequence inputs.
+    - Designed for efficiency and scalability.
 
-    For installation, usage instructions, and additional details, visit:
-    https://github.com/HosnaJabbari/KnotAli
-  dev_url: https://github.com/HosnaJabbari/KnotAli
+    Detailed installation and usage instructions can be found in the README files:
+    https://github.com/HosnaJabbari/CCJ
+
+  dev_url: https://github.com/HosnaJabbari/CCJ
 
 extra:
   recipe-maintainers:
