@@ -25,7 +25,7 @@ about:
   home: https://github.com/HosnaJabbari/KnotAli
   summary: "Prediction of RNA pseudoknotted secondary structures using the CCJ algorithm."
   description: |
-     CCJ is a computational tool for predicting RNA secondary structures with pseudoknots 
+    CCJ is a computational tool for predicting RNA secondary structures with pseudoknots 
     based on Minimum Free Energy (MFE) models. It includes three implementations: Original CCJ, 
     Modified CCJ, and Sparse CCJ. Sparse CCJ, the recommended version, offers memory-efficient 
     predictions suitable for large RNA sequences.
